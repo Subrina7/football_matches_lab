@@ -29,5 +29,9 @@
 -- SELECT COUNT(DISTINCT hometeam) + COUNT(DISTINCT awayteam) FROM matches WHERE (division_code = 'F1' OR division_code ='F2');
 
 -- q7 
-SELECT * FROM matches WHERE (hometeam = 'Huddersfield' AND awayteam = 'Swansea') OR (hometeam = 'Swansea' AND awayteam = 'Huddersfield');
+-- SELECT * FROM matches WHERE (hometeam = 'Huddersfield' AND awayteam = 'Swansea') OR (hometeam = 'Swansea' AND awayteam = 'Huddersfield');
+
+-- q8 
+-- 8) How many draws were there in the `Eredivisie` between 2010 and 2015?
+SELECT COUNT (*) FROM matches WHERE ( hometeam = 'Eredivisie' OR awayteam = 'Eredivisie') AND ftr = 'D' AND season >= 2010 AND season <= 2015;
 
