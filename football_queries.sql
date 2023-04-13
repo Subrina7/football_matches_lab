@@ -32,6 +32,16 @@
 -- SELECT * FROM matches WHERE (hometeam = 'Huddersfield' AND awayteam = 'Swansea') OR (hometeam = 'Swansea' AND awayteam = 'Huddersfield');
 
 -- q8 
--- 8) How many draws were there in the `Eredivisie` between 2010 and 2015?
-SELECT COUNT (*) FROM matches WHERE ( hometeam = 'Eredivisie' OR awayteam = 'Eredivisie') AND ftr = 'D' AND season >= 2010 AND season <= 2015;
+-- SELECT COUNT (*) 
+-- FROM matches 
+-- WHERE ( hometeam = 'Eredivisie' OR awayteam = 'Eredivisie') 
+-- AND ftr = 'D' 
+-- AND season >= 2010 
+-- AND season <= 2015;
+
+-- q9 
+SELECT * FROM macthes WHERE code = "E0"
+ORDER BY fthg ASC 
+ORDER BY ftag ASC; 
+
 
